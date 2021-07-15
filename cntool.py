@@ -101,7 +101,7 @@ def who_ip(ipLook):
             print('The ip address : ' + ipLook + "  it is privite ip address!!!")
                 
 def port_to_service():
-    writ()
+    write()
     
 
     logFile = open("out.txt", "r")
@@ -115,7 +115,7 @@ def port_to_service():
         try: 
             print ("Port: %s => service name: %s" %(port, socket.getservbyport(port, protocolname))) 
         except:
-            print("Port are private port")
+            print("Port %s are private port"%(port))
 
         #print(port)
         #print(protocol)
